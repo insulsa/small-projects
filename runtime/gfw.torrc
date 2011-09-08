@@ -1,0 +1,32 @@
+UpdateBridgesFromAuthority 1
+UseEntryGuards 0
+ExcludeExitNodes {cn}
+UseBridges 1
+SocksListenAddress 127.0.0.1 # accept connections only from localhost
+Nickname caowm2001
+#Address hostname
+ContactInfo 曹文明 <caowm2001 AT gmail dot com>
+Bridge 208.111.34.88:443
+Bridge 87.122.122.224:443
+Bridge 95.130.11.214:9001
+Bridge 208.111.34.88:443
+Bridge 87.122.128.8:443
+Bridge 95.130.11.214:9001
+Bridge 208.111.34.88:443
+Bridge 87.122.136.27:443
+Bridge 95.130.11.214:9001
+Bridge 208.111.34.88:443
+Bridge 86.208.145.252:443
+Bridge 87.122.142.196:443
+Bridge 208.111.34.88:443
+Bridge 87.122.123.30:443
+Bridge 95.130.11.214:9001
+Bridge 208.111.34.88:443
+Bridge 87.122.138.213:443
+Bridge 173.29.79.121:443
+Bridge 208.111.34.88:443
+Bridge 87.122.116.212:443
+Bridge 95.130.11.214:9001
+Bridge 208.111.34.88:443
+Bridge 99.160.248.124:443
+Bridge 173.23.92.70:443

@@ -1,0 +1,12 @@
+UpdateBridgesFromAuthority 1
+UseEntryGuards 0
+ShutdownWaitLength 0
+ExcludeExitNodes {cn}
+#SocksListenAddress 127.0.0.1 # accept connections only from localhost
+PIDFile /home/mitch/Start/Runtime/tor/gfw/pid
+Log notice file /home/mitch/Start/Runtime/tor/gfw/log
+RunAsDaemon 1
+DataDirectory   /home/mitch/Start/Runtime/tor/gfw/data
+Nickname caowm2001
+#Address hostname
+ContactInfo 曹文明 <caowm2001 AT gmail dot com>

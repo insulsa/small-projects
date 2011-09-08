@@ -1,0 +1,5 @@
+Sep 08 15:22:17.592 402018d0 Info: Privoxy version 3.0.17
+Sep 08 15:22:17.592 402018d0 Info: Program name: /usr/sbin/privoxy
+Sep 08 15:22:17.593 402018d0 Info: Loading actions file: /media/rfsusr-sata/bunmei/_blackMag/Proxynet/gfw.action
+Sep 08 15:22:17.593 402018d0 Info: Listening on port 8118 on IP address localhost
+Sep 08 15:24:21.258 402018d0 Info: exiting by signal 15 .. bye
