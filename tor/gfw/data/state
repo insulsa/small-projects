@@ -1,0 +1,11 @@
+# Tor state file last generated on 2011-04-30 17:29:33 local time
+# Other times below are in GMT
+# You *do not* need to edit this file.
+
+EntryGuard platipy 19523910EF516C345C3D51C68D76AC216E406564
+EntryGuardDownSince 2011-04-30 08:56:09 2011-04-30 08:56:09
+EntryGuardAddedBy 19523910EF516C345C3D51C68D76AC216E406564 0.2.1.30 2011-04-17 06:14:00
+# Which version of Tor generated this state file?
+TorVersion Tor 0.2.1.30
+# When was this state file last regenerated?
+LastWritten 2011-04-30 09:29:33

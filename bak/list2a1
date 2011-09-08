@@ -1,0 +1,7 @@
+#!/bin/bash
+sed  -i -r -e'1d' -e'/^$/ d' gfwlist
+<gfwlist awk '{if(!/^!.*/){print}}' >nocomment
+<nocomment tr [:punct:] \_ >nopunct
+<nopunct sed -r -e's/https?/_/g' -e's/^/_/' -e's/$/_/' -e's/_+/\.\*/g' >regex
+echo '{+forward-override{forward-socks4a 127.0.0.1:9050 .}}' >gfwlist.action
+cat regex >>gfwlist.action

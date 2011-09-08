@@ -1,0 +1,3 @@
+#!/bin/bash
+echo '{+forward-override{forward-socks4a 127.0.0.1:9050 .}}' >gfwlist.action
+<gfwlist sed -r -e'1d' -e's/https?\:?(\\?\/\\?\/)?//g' -e's/[\|\(\)]//g' -e's/^!.*//' >>gfwlist.action

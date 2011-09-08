@@ -1,0 +1,30 @@
+{-block{}}
+ssl.google-analytics.com
+.adserver.yahoo.com
+.google-analytics.com
+
+{+forward-override{forward-socks5 127.0.0.1:9051 .}}
+.google.com/.*youtube\.com.*
+.google.com/.*feedburner\.com.*
+
+{+forward-override{forward / .}}
+.dl.google.com
+
+{+forward-override{forward-socks5 127.0.0.1:9051 .}}
+.encrypted.google.com:80
+.appspot.com
+.docs.google.com
+.feedburner.com
+.youtube.com
+.ytimg.com
+.youtu.be
+.rsf.org
+.blogger.com
+.blogblog.com
+.blogspot.com
+.torproject.org
+.xys.org
+.facebook.com
+.fbcdn.net
+.twitter.com
+.mail-archive.com
