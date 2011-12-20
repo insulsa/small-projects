@@ -2,7 +2,7 @@ confdir _DIR_
 logdir _DIR_
 actionsfile gfw.action   
 logfile logfile
-listen-address  localhost:_PORT_
+listen-address  0.0.0.0:_PORT_
 forward 192.168.*.*/ .  
 forward 10.*.*.*/ .  
 forward 127.*.*.*/ .

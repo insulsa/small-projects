@@ -10,7 +10,7 @@ PRIVOXYPORT = 8118
 
 # all tor options can be specified by -o argument
 # which makes is easier to assign
-tor = /usr/sbin/tor --SocksPort $(TORPORT) --PIDFile $(pidfile) --DataDirectory $(datadir) -f $(torrc)
+tor = /usr/sbin/tor --SocksPort $(TORPORT) --PIDFile $(pidfile) --DataDirectory $(datadir) -f $(torrc) --RunAsDaemon 0
 
 .PHNOY: gfw
 gfw:TORPORT = $(GFWTORPORT)

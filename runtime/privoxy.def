@@ -1,10 +1,10 @@
-	#define _PORT_ 8118	
-#define _DIR_ /media/rfsusr-sata/bunmei/_blackMag/Proxynet 
+  #define _PORT_ 8118
+  #define _DIR_ /media/rfsusr-sata/bunmei/white/proxy
 confdir _DIR_
 logdir _DIR_
 actionsfile gfw.action   
 logfile logfile
-listen-address  localhost:_PORT_
+listen-address  0.0.0.0:_PORT_
 forward 192.168.*.*/ .  
 forward 10.*.*.*/ .  
 forward 127.*.*.*/ .
