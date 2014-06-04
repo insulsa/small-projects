@@ -1,0 +1,11 @@
+[AutoProxy 0.3.0]
+! this filter contains basically only pure regex
+! however , for the interoperability with autoproxy I still have to make it abp compatible
+/https:\/\/dl-ssl\.google\.com\//
+/http:\/\/.*\.wikisource\.org\//
+/\.facebook\.com/
+/\.wordpress\.com/
+/\.gamer\.com\.tw/
+/\.blogspot\.com/
+/evil=yes/
+/\.archive\.is/

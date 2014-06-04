@@ -1,0 +1,18 @@
+Nickname caowm2001
+ContactInfo 曹文明 <caowm2001 AT gmail dot com>
+
+SOCKSPort 9050
+TransPort auto
+ControlPort auto
+
+CookieAuthentication 1
+ControlSocket /home/tor/photon/control
+DataDirectory /home/tor/photon/data
+
+ExcludeExitNodes {cn}
+
+UseEntryGuards 0
+ExcludeSingleHopRelays 0
+
+LogMessageDomains 1
+WarnUnsafeSocks 1

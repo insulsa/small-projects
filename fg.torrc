@@ -1,0 +1,20 @@
+Nickname caowm2001
+ContactInfo 曹文明 <caowm2001 AT gmail dot com>
+
+SOCKSPort auto
+TransPort auto
+ControlPort auto
+
+CookieAuthentication 1
+ControlSocket /home/tor/fg/control
+DataDirectory /home/tor/fg/data
+
+ExcludeExitNodes {cn}
+HTTPSProxy 127.0.0.1:8580
+HTTPProxy 127.0.0.1:8580
+
+UseEntryGuards 0
+ExcludeSingleHopRelays 0
+
+LogMessageDomains 1
+WarnUnsafeSocks 0
