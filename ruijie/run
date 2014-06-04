@@ -1,0 +1,89 @@
+#!/bin/bash
+runtime=/tmp/isp/
+[ -d $runtime ] || mkdir $runtime || exit 1
+cd `dirname $0`
+mentohust=`realpath ../mentohust/bin/mentohust`
+function env_ruijie(){
+	HARDDEV="eth0"
+	VLAN="ruijie"
+	WINDOW="ruijie"
+
+	PASSW='dayurishi'
+
+	UNAME='201017571'
+	PASSW='Li111'
+	MACADDR='00:22:64:62:4A:AC'
+	MASK=24
+	IPADDR=172.16.32.16
+	GATEW=172.16.32.1
+
+	UNAME='U201017608'
+	PASSW='hua10*doulang'
+	MACADDR='20:6A:8A:33:20:04'
+	MASK=24
+	IPADDR=172.16.32.62
+	GATEW=172.16.32.1
+
+	UNAME='V201141140'
+	PASSW='V201141140'
+	MACADDR='00:03:0D:A4:9A:FB'
+	IPADDR=172.16.37.115
+	MASK=24
+	GATEW=172.16.37.1
+
+	UNAME='U201017615'
+	PASSW='19921208'
+	UNAME='201017625'
+	PASSW='U201017615'
+
+	UNAME='U201017604'
+	PASSW='04250924'
+	MACADDR='e8:11:32:29:00:f1'
+	IPADDR=172.16.33.30
+	GATEW=172.16.33.1
+	MASK=24
+
+	UNAME='U201017607'
+	PASSW='PENG'
+	MACADDR='e8:9a:8f:0a:42:61'
+	IPADDR=172.16.32.29
+	GATEW=172.16.32.1
+	MASK=24
+
+
+}
+function h(){
+	${mentohust} -h
+}
+function k(){
+	cp mentohust.conf /etc
+	${mentohust} -k
+	rm /etc/mentohust.conf
+}
+function linewatch(){
+	env_ruijie
+	tail -n0 -f /var/log/kern.log | grep --max-count=1 "${HARDDEV}: Link is up"
+}
+function ruijie(){
+	env_ruijie
+	dialer="${mentohust} -v4.44 -i${IPADDR} -o${IPADDR} -b0 -y0 -t1 -e1 -r1 -l0 -a1 -d0 -u'${UNAME}' -p'${PASSW}' -w -n${VLAN}"
+>/tmp/isp/ruijie.screenrc cat << EOF
+screen ${dialer}
+msgwait 0
+logfile /tmp/isp/screen.log
+logfile flush 0
+log on
+EOF
+	ip link set ${HARDDEV} up
+	ip link add link ${HARDDEV} name ${VLAN} type macvlan
+	ip addr add dev ${VLAN} local ${IPADDR} peer ${GATEW}
+	ip link set ${VLAN} address ${MACADDR}
+	ip link set ${VLAN} up
+	ip route add default via ${GATEW} prot static
+	ip route replace default via ${GATEW} prot static
+	linewatch &
+	screen -m -c "$runtime/ruijie.screenrc" -S ${WINDOW}
+	rm /etc/mentohust.conf
+	ip link del ${VLAN}
+}
+$1
