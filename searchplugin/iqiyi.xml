@@ -1,0 +1,31 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>iqiyi</os:ShortName>
+<os:Description>爱奇艺</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/x-icon;base64,
+AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAA
+AAAAAAAsnHogLJx6gCyceq85ooL/OaKC/yycev8snHr/LJx6/yycev8snHr/LJx6/zmigv85ooL/
+LJx6ryyceoAsnHogLJx67yycev8snHr/OaKC/zmigv85ooL/LJl4tCyZeLQsmXi0LJl4tDmigv85
+ooL/OaKC/yycev8snHr/LJx6vyycev8snHrvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAALJx67yycev8AAAAAAAAAAAAAAAAAAAAAqtfJVSyZeP8smXi7AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALJl4/yyZeHIsmXi0LJl4/1atk/8smXj/
+LJl4tCyZeHIsmXj/LJl4PwAAAAAsmXj/LJl4/wAAAAAsmXg/LJl4/yyZeP8smXhyLJl4tCyZeP//
+//8zLJl4/yyZeLQsmXhyLJl4/yyZeD8AAAAALJl4/yyZeP8AAAAALJl4PyyZeP8smXj/LJl4ciyZ
+eLQsmXj/////MyyZeP8smXi0LJl4ciyZeP8smXg/AAAAACyZeP8smXj/AAAAACyZeD8smXj/LJl4
+/yyZeHIsmXi0LJl4/wAAAAAsmXj/LJl4tCyZeHIsmXj/LJl4PyyZeFMsmXj/LJl4/yyZeFMsmXg/
+LJl4/yyZeD8smXhyLJl4tCyZeP8AAAAALJl4/yyZeLQsmXhyLJl4/yyZeD8smXirLJl4/yyZeP8s
+mXi7LJl4PyyZeP8smXj/LJl4ciyZeLQsmXj/AAAAACyZeP8smXi0LJl4ciyZeP8smXg/LJl4/yyZ
+eLQsmXi0LJl4/yyZeD8smXj/LJl4/yyZeHIsmXibLJl4/yyZeP8smXj/LJl4tCyZeHIsmXj/LJl4
+PyyZeP8smXg/LJl4PyyZeP8smXg/LJl4/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsnHr/LJx67wAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyceu8snHr/LJx67yycev8snHr/OaKC/zmi
+gv85ooL/LJl4tCyZeLQsmXi0LJl4tDmigv85ooL/OaKC/yycev8snHr/LJx6vyyceiAsnHqALJx6
+rzmigv85ooL/LJx6/yycev8snHr/LJx6/yycev8snHr/OaKC/zmigv8snHqvLJx6gCyceiAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAA//AAA8f8AAAAkAAAAJAAAACQAAAgAAAAIAAAACAAAAAAAAAD//wAAP/wAAAAA
+AAAAAAAA//8AAA==
+</os:Image>
+<SearchForm>http://www.iqiyi.com/</SearchForm>
+<os:Url type="text/html" method="GET" template="http://so.iqiyi.com/so/q_{searchTerms}">
+</os:Url>
+</SearchPlugin>

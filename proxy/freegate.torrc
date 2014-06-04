@@ -1,0 +1,17 @@
+Nickname caowm2001
+ContactInfo 曹文明 <caowm2001 AT gmail dot com>
+
+#SOCKSPort auto
+#TransPort auto
+ControlPort auto
+
+ExcludeExitNodes {cn}
+HTTPSProxy 127.0.0.1:8580
+HTTPProxy 127.0.0.1:8580
+
+#UseEntryGuards 0
+ExcludeSingleHopRelays 0
+
+SafeLogging 0
+LogMessageDomains 1
+WarnUnsafeSocks 0

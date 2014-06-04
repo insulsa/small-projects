@@ -1,0 +1,3 @@
+#!/bin/sh
+set -x
+while read x ; do play "$x" ; done

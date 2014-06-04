@@ -1,0 +1,2 @@
+#!/bin/sh
+tail -f /home/bunmei/run/play/list | ( while read x ; do sh -c "mplayer $x </dev/null" ; done )

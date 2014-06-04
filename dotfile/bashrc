@@ -1,0 +1,107 @@
+# ** DEBUG **
+LINE=`who am i | awk '{printf "%s",$2$NF}'`
+LINEO=`who am i | awk '{printf "%s:%s",$1,$2$NF}'`
+function log(){
+    printf "%s\n" "$LINEO":`date +%s.%n`:`realpath .`:" $*" >> ~/projects/bash/bash.log
+}
+unset DEBUG
+#DEBUG=yes ; log "INVOCATION":$-:$*
+TRUE=0
+
+# tele-effecting is forbidden,
+# say, one cannot set something in xinitrc then
+# use that flag in gnome-terminal
+# the defination and passing must be head to head
+
+# conditions like ssh is not into consideration
+
+# the condition determination functions
+
+! tty --silent || [ "$PS1$PS2$PS3$PS4" == "" ] || ! [[ $- =~ i ]] || [[ $- =~ c ]]
+is_batch=$?
+[ "$LOGNAME" != "$USER" ] || ! [ -O `readlink -f /dev/stdin` ] || { who am i | grep --invert-match --quiet $USER ; }
+is_foreign=$?
+[ ~ -ef . ]
+is_roaming=$?
+[[ "$TERM" =~ "screen*" ]]
+is_screen=$?
+
+# the actions
+function gotoshell(){
+    [ "$DEBUG" ] && log "is interaction"
+    shopt -s histappend
+    [ -f /etc/bash_completion ] && . /etc/bash_completion
+    export VISUAL=vim
+    export EDITOR=vim
+    export LANG=en_GB.utf8
+    export TZ="/usr/share/zoneinfo/Asia/Shanghai"
+    HISTSIZE=100000
+    HISTFILESIZE=100000
+    HISTCONTROL=ignoreboth
+    PS1="\[\e]0;""\! $LINE@\h:\w""\a\]""\u \! $LINE@\h:""\[\033[01;34m\]""\w""\[\033[00m\]""\[\033[01;32m\]""\$""\[\033[00m\] "
+    PS2=">"
+    PS3=""
+    PS4="+"
+    umask 0007
+    alias ls='ls --color'
+    alias vi='vim'
+    alias editor='vim'
+    PATH=~/bin:$PATH
+    #[ -f /usr/lib/libtsocks.so ] && LD_PRELOAD=/usr/lib/libtsocks.so:$LD_PRELOAD
+}
+function gotoplain(){
+    export LANG="POSIX"
+    export TZ="/usr/share/zoneinfo/Asia/Shanghai"
+    [ "$DEBUG" ] && log "is plain"
+    shopt -s histappend
+    [ -f /etc/bash_completion ] && . /etc/bash_completion
+    HISTSIZE=100000
+    HISTFILESIZE=100000
+    HISTCONTROL=ignoreboth
+    umask 0007
+    PATH=~/bin:$PATH
+}
+function gotoforeign(){
+    [ "$DEBUG" ] && log "is foreign" || true
+    PS1="\[\e]0;""$LINEO \u@\h:\w""\a\]""$LINEO\u@\h:""\[\033[01;32m\]""\w""\[\033[00m\]""\[\033[01;32m\]""\$""\[\033[00m\] "
+    PS2=">"
+    PS3=""
+    PS4="+"
+}
+function gotoscreen(){
+    export LANG="en_GB.utf8"
+    export TZ="/usr/share/zoneinfo/Asia/Shanghai"
+    NAME=session:"$DISPLAY"
+    EX='[[:space:]][[:digit:]]+\.'"$NAME"'[[:space:]]'
+    N=`screen -ls | grep --extended-regexp --only-matching "$EX" | wc -l`
+    [ 0 -eq $N ] && screen -m -S "$NAME"
+    [ 1 -eq $N ] && screen -x -r "$NAME"
+    [ 0 -eq $N ] || [ 1 -eq $N ]
+}
+function gotobatch(){
+    [ "$DEBUG" ] && log "is batch"
+    [ "$LANG" ] || LANG="POSIX"
+    export LANG
+}
+
+# flat format is used in this file with few exceptions for
+# interactiveness testing, where a return is directly fired
+# and non-batch is omitted on in the other statements
+# whatsup -->> todo
+
+[ $is_batch -eq $TRUE ] && gotobatch && return
+
+[ $is_foreign -eq $TRUE ] && gotoforeign && return
+
+[ "$TERM" == "linux" ] && gotoscreen && exit
+
+[ "$TERM" == "xterm" ] && gotoscreen && exit
+
+[ "$TERM" == "dumb" ] && gotoplain && return
+
+[ $is_screen -eq 0 ] && gotoshell && return
+
+[ $is_roaming -eq 0 ] && gotoshell && return
+
+unset is_batch is_foreign is_screen is_roaming
+log "warning: bashrc states exceeded"
