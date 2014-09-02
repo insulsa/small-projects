@@ -1,0 +1,3 @@
+#
+# /etc/default/grub
+GRUB_CMDLINE_LINUX="machtype=8.9 libata.force=80c consoleblank=0"

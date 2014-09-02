@@ -1,0 +1,14 @@
+#!/bin/sh
+case "$1" in
+	suspend)
+		;;
+	resume)
+		;;
+	hibernate)
+		ifdown wlan0
+		;;
+	thaw)
+		;;
+esac
+
+exit 0

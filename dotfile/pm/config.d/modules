@@ -1,0 +1,2 @@
+#SUSPEND_MODULES="ums_realtek rtl8187 usb_storage ehci_pci ehci_hcd ohci_pci ohci_hcd usbhid usbcore"
+SUSPEND_MODULES="ehci_pci ehci_hcd"

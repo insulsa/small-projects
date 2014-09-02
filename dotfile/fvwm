@@ -1,0 +1,9 @@
+#
+# ~/.fvwm/config
+EdgeResistance 750
+DestroyMenu MenuFvwmRoot
+Mouse 0 2 A Maximize
+Style * TitleAtLeft
+Style * Font xft:
+DesktopSize 2x2
+
