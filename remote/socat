@@ -1,0 +1,2 @@
+socat -T 5 -dd tcp-listen:9050,fork,reuseaddr openssl:27.120.120.15:443,certificate=stunnel.pem,cafile=/etc/ssl/certs/stunnel.pem
+socat -T 3 -dd openssl-listen:443,cert=/etc/ssl/certs/stunnel.pem,cafile=/etc/ssl/certs/stunnel.pem,fork,reuseaddr tcp:localhost:8080

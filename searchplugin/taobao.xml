@@ -1,0 +1,7 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>taobao</os:ShortName>
+<os:Description>淘宝</os:Description>
+<SearchForm>http://s.taobao.com/</SearchForm>
+<os:Url type="text/html" method="GET" template="http://s.taobao.com/search?q={searchTerms}">
+</os:Url>
+</SearchPlugin>

@@ -1,0 +1,45 @@
+cat > /etc/stunnel/server.conf << .
+foreground = yes
+sslVersion = all
+pid =
+[socks]
+client = no
+verify = 4
+cert = /etc/ssl/certs/stunnel.pem
+CAfile = /etc/ssl/certs/stunnel.pem
+accept = 443
+connect = 9050
+redirect = 8080
+[https]
+client = no
+verify = 0
+cert = /etc/ssl/certs/stunnel.pem
+accept = 127.0.0.1:8080
+connect = 80
+.
+cd /etc/ssl/certs ; openssl req -new -x509 -nodes -days 365 -out stunnel.pem -keyout stunnel.pem
+stunnel4 /etc/stunnel/server.conf
+socat tcp-listen:22,fork -
+socat openssl:localhost:443,cafile=/etc/ssl/certs/stunnel.pem -
+ssh -N -D 22 localhost
+
+cat > /etc/stunnel/client.conf << .
+foreground = yes
+pid =
+[socks]
+client = yes
+verify = 4
+cert = /etc/ssl/certs/stunnel.pem
+CAfile = /etc/ssl/certs/stunnel.pem
+accept = 127.0.0.1:9050
+connect = 27.120.120.15:443
+.
+cat > /etc/proxychains.conf << .
+strict_chain
+[ProxyList]
+socks5 localhost 443
+.
+stunnel4 /etc/stunnel/client.conf
+proxychains wget scanme.nmap.org -O /dev/null
+
+socat tcp-listen:9050,fork openssl:27.120.120.15:443,cafile=/etc/ssl/certs/stunnel.pem 

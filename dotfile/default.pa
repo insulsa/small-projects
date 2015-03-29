@@ -1,0 +1,5 @@
+#!/usr/bin/pulseaudio -nF
+load-module module-native-protocol-tcp auth-anonymous=1 port=4712
+#load-module module-pipe-sink file=/home/bunmei/pulsefifo
+load-module module-native-protocol-unix
+load-module module-udev-detect

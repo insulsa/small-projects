@@ -1,0 +1,7 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>douban</os:ShortName>
+<os:Description>豆瓣</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Url type="text/html" method="GET" template="https://www.google.com/search?q={searchTerms}+site:douban.com+inurl:/review/ OR inurl:/group/topic/ OR inurl:/note/">
+</os:Url>
+</SearchPlugin>

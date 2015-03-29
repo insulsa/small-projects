@@ -1,0 +1,8 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>wen lu</os:ShortName>
+<os:Description>a google reverse proxy</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<SearchForm>https://www.google.com/</SearchForm>
+<os:Url type="text/html" method="GET" template="https://wen.lu/search?q={searchTerms}">
+</os:Url>
+</SearchPlugin>

@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Provincial library of Hubei , China</os:ShortName>
+<os:Description>湖北省图书馆</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAxtJREFUKM8BEAPv/AFgkbqGPhbxAwi33fGOt+Du/f4B/wD//gX9Avv/AgMJ/Pz8+/5sOQRjNQr9+/v+9fwBy8HB6U5KDg0S/0VH8V9qrb25BP79AgMBAvwD/gMA/fj1AQb+Lw0EDQn9MjUzAPL2BCAQB+oRIgfo4vaqpUd5euIC8RwTD/f7+wUDBPj8+fsI+hclI0JDSQT+Bvj77enm5ATf6d47yK/QMkcIPjX4B/8MDvwrPS8G/AoDAwX6BwLq694zM0PXp67tur0RUUwAHBUEA/768uvv9RwNHWtkg4yHLSYbDA0U1lZl8d3hTOrg8fX0yaOwxPLiRF1Q8Nbf5wD+ArXj6/8TF/r7BQkWEjlJSjdCTPW30gTt7SBvaainp/wCBuORlTM5QxAaJvwGA9ru7AIVHSgeFxQkUlAXJC4Pl5/VT1fv1Mz+OyzyQEG5ysQF6ewK8vT4eI0C4+ED4+cFDQsCNREPuTQ76H17uE5Y//n7J2xzNJGLAOn9MQ0Kj4GN/8zPHHNiC+XR9fT15KyyDAoKAu8BAw0zLwYJBAy/uAYLAOarochOVAjEwsQ5PBUFBum1vSFMUPD++yJARAoBAPfx8gLP1NE3m5T79wcDSUkEt8YQzNP/xcT4CAgOBQnfs6/0zMoRKSwMKCy/XF36BPwIBwkE/wb8Af0C9igjIlFO5NLS9/XzB/D1+/f3A/4C3pimFzw15+7qNqOl89DQ3bOqDQ4VAhsMG+LGwwkA+dpmZQJNTimfl+0LFCGfmAF7exFPSvsJChEBAwX1++0fGQAgJv/09AIHFA/fjpoH3twBDBEvc2+p3d4Yq5riGBb/UEb1z8UOJCb28e25LykJur8I1tUxHB4EDAkJ/vkA/v0GBkpNh5WT6v782Nzi9wD8LywsHcLFO4F+rsjMHFpT6Xh6+A8HAGZmA0tLTTZQS/0eHwFcTLe/wC5BPBABCR8tKAIC/0dwe/ED/qC1r01zePwQFfbFxftHRgGaqqQF/PfL1dLy7fIuOTsAAwMQCgzp6OcNGBf/6vDJ0M0aHRsRCgk+Njf6rbQUVE41Z3C069HCFQAAAABJRU5ErkJggg==</os:Image>
+<SearchForm>http://hbtinterlib.library.hb.cn/opac/index/advance</SearchForm>
+<os:Url type="text/html" method="GET" template="http://hbtinterlib.library.hb.cn/opac/search?q={searchTerms}" resultDomain="hbtinterlib.library.hb.cn">
+</os:Url><os:Url type="application/opensearchdescription+xml" method="GET" template="http://mycroftproject.com/updateos.php/id0/hubeilibrary.xml" rel="self" resultDomain="mycroftproject.com">
+</os:Url>
+</SearchPlugin>

@@ -1,7 +1,0 @@
-Interface: wlan0, datalink type: EN10MB (Ethernet)
-Starting arp-scan 1.8.1 with 256 hosts (http://www.nta-monitor.com/tools/arp-scan/)
-192.168.1.1	5c:63:bf:9a:9b:d7	(Unknown)
-192.168.1.190	90:00:4e:45:9e:16	Hon Hai Precision Ind. Co.,Ltd.
-
-2 packets received by filter, 0 packets dropped by kernel
-Ending arp-scan 1.8.1: 256 hosts scanned in 1.782 seconds (143.66 hosts/sec). 2 responded

@@ -1,0 +1,10 @@
+Application 1:
+ badblocks -s -b512 -c2048 -p0 -oro.out /dev/sda
+ badblocks -s -b512 -c2048 -p0 -iro.out -orw.out -w -trandom /dev/sda
+ cat ro.out rw.out | sort -n | gap.awk
+
+Application 2:
+ awk$ write.awk > wipe.grub4dos
+ grub> map (hd0) (0xff)
+ grub> map --hook
+ grub> configfile wipe.grub4dos

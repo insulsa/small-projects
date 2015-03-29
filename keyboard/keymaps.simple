@@ -1,0 +1,4 @@
+keymaps 0-255
+keycode 29 = nil
+keycode 125 = Control
+keycode 127 = Alt

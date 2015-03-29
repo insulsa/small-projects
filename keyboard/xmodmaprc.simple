@@ -1,0 +1,6 @@
+clear control
+clear mod4
+keycode 37 = Pointer_Button2 Pointer_EnableKeys
+keycode 133 = Control_L
+keycode 135 = Control_R
+add Control = Control_L Control_R

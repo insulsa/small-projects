@@ -1,0 +1,1 @@
+ctorrent -A "Azureus 4.3.0.4;Linux;Java 1.6.0_24" -P "-AZ4306-" "$@"

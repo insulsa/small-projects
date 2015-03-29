@@ -1,0 +1,18 @@
+clear Shift
+clear Lock
+clear Control
+clear Mod1
+keycode 114 = Pointer_Button2 Pointer_EnableKeys
+keycode 23 = Meta_L 
+keycode 66 = Control_L
+keycode 37 = Caps_Lock
+keycode 133 = Tab
+keycode 64 = Tab
+keycode 135 = Meta_R
+keycode 113 = Control_R
+keycode 116 = Control_R
+keycode 111 = Shift_R
+add Shift = Shift_L Shift_R
+add Lock = Caps_Lock
+add Control = Control_L Control_R
+add Mod1 = Meta_L Meta_R Alt_L Alt_R

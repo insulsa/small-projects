@@ -1,31 +1,7 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
 <os:ShortName>bgm</os:ShortName>
-<os:Description>bangumi 番组计划</os:Description>
+<os:Description>番组</os:Description>
 <os:InputEncoding>UTF-8</os:InputEncoding>
-<os:Image width="16" height="16">data:image/x-icon;base64,
-AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALJu+f//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAsm75ELJu+cCybvn/sm75/7Ju+f+ybvn//////7Ju+f+ybvn/sm75/7Ju+f+y
-bvn/sm75/7Ju+f+ybvnAsm75ELJu+cCybvn/sm75/7Ju+f+ybvn/sm75////////////sm75/7Ju
-+f+ybvn/sm75/7Ju+f+ybvn/sm75/7Ju+cCwaPn/sGj5/9iz/P//////////////////////////
-/////////////////////////////////9iz/P+waPn/rF/6/6xf+v//////////////////////
-////////////////////////////////////////////////rF/6/6lW+/+pVvv/////////////
-////////////////////zXn2/////////////////////////////////6lW+/+lTfz/pU38////
-///Nefb/zXn2/8159v//////zXn2///////Nefb//////8159v/Nefb/zXn2//////+lTfz/okT8
-/6JE/P//////////////////////2bb8/8159v/Nefb/zXn2/9m2/P//////////////////////
-okT8/546/f+eOv3//////8159v/Nefb/zXn2////////////////////////////zXn2/8159v/N
-efb//////546/f+bMf7/mzH+////////////////////////////////////////////////////
-//////////////////+bMf7/lyj+wJco/v/Mk/7/////////////////////////////////////
-///////////////////////Mk///lyj+wJQf/xCUH//AlB///5Qf//+UH///lB///5Qf//+aP///
-mj///5o///+UH///lB///5Qf//+UH///lB//wJQf/xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAzXn2/5o////Nefb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAzXn2/wAAAAAAAAAAAAAAAM159v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAzXn2/wAAAAAAAAAAAAAAAAAAAAAAAAAAzXn2/wAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAzXn2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNefb/AAAAAAAAAAAA
-AAAA+f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/j8AAP3f
-AAD77wAA9/cAAA==
-</os:Image>
-<SearchForm>http://bgm.tv/</SearchForm>
-<os:Url type="text/html" method="GET" template="http://bgm.tv/subject_search/{searchTerms}">
+<os:Url type="text/html" method="GET" template="https://www.google.com/search?q={searchTerms}+site:bgm.tv OR site:bangumi.tv OR site:chii.in">
 </os:Url>
 </SearchPlugin>

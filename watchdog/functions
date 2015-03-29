@@ -1,0 +1,18 @@
+#!/bin/bash
+
+ERROUT=/dev/stdout
+
+INIT_sec=2
+export TIMEOUT_sec=1
+TIMEOUT_kill=10
+INTERVAL_sec=1
+MAXFAIL=2
+failcount=0
+
+trap exit HUP INT QUIT TERM
+[ $INIT_sec -gt $INTERVAL_sec ] && sleep $(( INIT_sec - INTERVAL_sec ))
+function watch while [ $failcount -lt $MAXFAIL ]
+  do
+	sleep $INTERVAL_sec
+	probe 2>$ERROUT && failcount=0 || echo fail times $((failcount++)) >$ERROUT
+  done

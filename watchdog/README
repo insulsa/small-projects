@@ -1,0 +1,20 @@
+SYNOPSIS
+this is a framework to watchdog resources , typically network connectivity
+to run this , we have to make one test suit , for example
+	#!/bin/bash
+	source functions
+	function probe { ping timeout $TIMEOUT_sec }
+	watch
+
+EXPLAINATION
+the function `probe' is used as callback in parent function `watch' .
+environment $TIMEOUT_sec is exported and must be honored . a single
+probe must return zero on success and nonzero on failure . a single
+probe who doesn't return within a reasonable time after $TIMEOUT_sec
+is considered dead .
+stderr of the prober is directed , maybe logged , by the watcher function .
+
+BUGS
+the `functions' and the prober shares same context , so mangling
+variables can ruin everything . this is pathetic defect since bash
+don't provide us with namespaces .

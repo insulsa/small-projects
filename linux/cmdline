@@ -1,0 +1,5 @@
+# /etc/default/grub
+GRUB_CMDLINE_LINUX=
+machtype=8.9 libata.force=80c 
+mmc_core.removable=0
+consoleblank=0

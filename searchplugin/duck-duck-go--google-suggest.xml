@@ -1,0 +1,9 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>ddg googlesuggest</os:ShortName>
+<os:Description>Duck Duck Go + Google Suggest (Proxied)</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Url type="text/html" method="GET" template="http://duckduckgo.com/?q={searchTerms}">
+</os:Url><os:Url type="application/x-suggestions+json" method="GET" template="http://ddgg.nfriedly.com/complete/search?output=firefox&amp;q={searchTerms}">
+</os:Url><os:Url type="application/x-suggestions+xml" method="GET" template="http://ddgg.nfriedly.com/complete/search?q={searchTerms}&amp;client=ie8&amp;mw={ie:maxWidth}&amp;sh={ie:sectionHeight}&amp;rh={ie:rowHeight}&amp;inputencoding={inputEncoding}&amp;outputencoding={outputEncoding}" rel="suggestions">
+</os:Url>
+</SearchPlugin>

@@ -1,0 +1,16 @@
+keymaps 0-255
+keycode 15 = Alt
+#keycode 29 = CtrlL_Lock
+keycode 56 = Tab
+keycode 58 = Control
+keycode 103 = Shift
+keycode 104 = Scroll_Backward
+ shift keycode 104 = Decr_Console
+keycode 105 = Control
+keycode 106 = Compose
+keycode 108 = Control
+keycode 109 = Scroll_Forward
+ shift keycode 109 = Incr_Console
+keycode 110 = Compose
+keycode 125 = Tab
+keycode 127 = Alt

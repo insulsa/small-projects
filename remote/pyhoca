@@ -1,0 +1,1 @@
+pyhoca-cli --command rxvt --remote-ssh-port 3843 --geometry fullscreen --link modem --pack 8-jpeg-1 --kbd-layout jp --server 27.120.120.15

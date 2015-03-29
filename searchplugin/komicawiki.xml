@@ -1,0 +1,11 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>KomicaWiki</os:ShortName>
+<os:Description>Komica 留言版底下附屬百科</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/x-icon;base64,AAABAAEAEBAQAAAABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwNr8APj8+AAFNHAARXHJAGxsfwAAAP8A9fX/AEZGUwAAAAAAuLj/AIC1+QAvLzcAenr/AP8A/wAAAAAAmZkzM5MzOZmZmbtDa0Q5mZmZlmZmZpmZmZmWd3druZmZmbrWfaG5mZmZF2dmepmZmZmWYzNonJmZmZOxEbXMyZnJixEQJYyJmcxSARAlyFicjFIBgAyIWJhcgFhYhYVYmFhYWFhapVicioVVVXeliZnHqFVViIqpmZnHiIiIl6nwhwAA8AcAAPgPAAD4BwAA8AcAAPAPAAD4CwAA+AEAANABAADAAAAAgAAAAIAAAACAAAAAgAEAAMABAADwCQAA</os:Image>
+<SearchForm>http://komica.org</SearchForm>
+<os:Url type="text/html" method="POST" template="http://brea.komica.org/wiki/index.php?cmd=search" resultDomain="brea.komica.org">
+  <os:Param name="word" value="{searchTerms}"/>
+</os:Url><os:Url type="application/opensearchdescription+xml" method="GET" template="http://mycroftproject.com/updateos.php/id0/komicawiki.xml" rel="self" resultDomain="mycroftproject.com">
+</os:Url>
+</SearchPlugin>

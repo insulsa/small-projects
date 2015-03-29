@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# ping host , default to gateway.localhost , gives example of usage of
+# the watchdog framework
+HOST=${1:-gateway.localhost}
+source functions
+export TIMEOUT_sec
+function probe { ping $HOST -q -c 1 -w $TIMEOUT_sec ; }
+watch
