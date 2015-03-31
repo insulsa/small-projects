@@ -1,0 +1,1 @@
+find /home/bunmei/1/ -type f -print0 | ruby2.1 txt2json.sncli.rb:

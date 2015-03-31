@@ -1,0 +1,335 @@
+/home/bunmei/plain/terms.txt
+
+﻿"Chromatography, Gas/methods"[MeSH Terms] "Lipids"[MeSH Terms]
+("Metabolome"[MeSH Terms] OR "Metabolomics"[MeSH Terms])
+("Plasma"[MeSH Terms] OR "Serum"[MeSH Terms])
+
+"total lipid"
+chromatographic fingerprinting
+
+https://www.ncbi.nlm.nih.gov/pubmed/?term=
+%%
+/home/bunmei/plain/overview.txt
+
+﻿%%
+In retrospect, metabolomics should have been the highest priority of systems biology. The knowledge of the biochemical pathways that use and produce metabolites is extensive. There is a long history of successful application of metabolites as measured biomarkers (blood cholesterol, glucose, triglycerides), and the technologies to measure metabolites have been in place for decades, certainly long before sequencing and immobilized nucleotide arrays. Furthermore, variations in human health and disease as well as exogenous influences on health (age, pathogens, toxins, diet and drugs) are reflected in metabolism. The new strategy of measuring all, or subsets of, metabolites provides considerable advantage over focused single metabolite measurements
+
+DOI: 10.1097/MOL.0b013e328012d911
+
+IMPORTANT
+
+%%
+doi:10.1038/lipidmaps.2010.28
+Over 500 lipid species have been identified and quantified in human blood plasma.
+Fatty Acyls
+Glycerolipids
+Glycerophospholipids
+Sphingolipids
+Sterol lipids
+Prenol lipids
+
+%%
+http://lipidlibrary.aocs.org/GC_lipid/08_molsp/index3.htm
+FIGURE
+GC trace of the total lipid profile, following phospholipase C digestion and preparation of the TMS ether derivatives, of plasma from a normolipemic subject . A stainless-steel column (50 cm x 2 mm i.d.), packed with 3 % OV-1TM on Gas Chrom QTM (100-120 mesh), was temperature-programmed from 175 to 350ºC at 4ºC/min with nitrogen as the carrier gas at a flow-rate of 40 mL/min. Tridecanoin is the internal standard. Peak "A" is the TMS ether derivative of palmitoylsphingosine. 
+沸点顺序
+  A, TMS ester derivatives of free acids; B, TMS ethers of monoacylglycerols (derived from lysophosphatidylcholine); C, TMS ether of cholesterol; D, tridecanoin (internal standard); E, TMS ether of 16:0-sphingosine (derived from sphingomyelin); F, TMS ethers of diacylglycerols (derived from phosphatidylcholine) and ceramides; G, more TMS ethers of ceramides; H, cholesterol esters; J, triacylglycerols.
+Myher,J.J. and Kuksis,A., J. Biochem. Biophys. Methods, 10, 13-23 (1984).
+
+%%
+Lipidomics reveals a remarkable diversity of lipids in human plasma
+http://www.jlr.org/content/51/11/3299.full
+
+%%
+The lipidomics approaches can be applied both as the phenotyping platform and for the hypothesis-driven research aiming to elucidate
+doi: 10.1677/JME-08-0150
+
+%%
+Focused metabolomic profiling in the drug development process: advances from lipid profiling
+  2005
+  Lipids are a particularly important subset of the metabolome because they are integrated into many aspects of global metabolism ...
+  A considerable body of work is emerging concerning the profiling of the structural and energetic lipids.
+  Directly profiling metabolites (metabolic profiling or metabolomics) has distinct advantages over other omics approaches in efficiently building knowledge of biological status because intermediary metabolism is proximal to phenotype, and because metabolites can be measured quantitatively and semi-comprehensively. 
+  ... metabolomics has a decisive advantage over other <-omics> technologies because it is more proximal to phenotype.
+doi:10.1016/j.cbpa.2005.06.002
+http://www.sciencedirect.com/science/article/pii/S1367593105000797
+%%
+/home/bunmei/plain/filter.txt
+
+lipid classes coverage
+  overlap with plasma lipids
+  non-lipids
+
+sample
+  plasma (serum)
+    secretions
+    cell tissues
+extraction
+  good extraction get good recovery on many lipid classes
+  把不感兴趣的部分扔掉，别来干扰我定性。
+derivatization
+  yield and stability
+chromatography condition
+
+have figures and tables
+
+%%
+/home/bunmei/plain/web_survey.txt
+
+﻿%%
+EXTRACTION OF LIPIDS FROM TISSUES - A BEGINNER'S GUIDE
+http://lipidlibrary.aocs.org/topics/archive/extraction.htm
+
+%%
+PREPARATION OF LIPID EXTRACTS FROM TISSUES
+http://lipidlibrary.aocs.org/topics/extract2/index.htm
+ Advances in Lipid Methodology - Two, pp. 195-213 (1993) (Ed. W.W. Christie, Oily Press, Dundee)
+
+%%
+EXTRACTION OF LIPIDS FROM TISSUES AND OTHER PRELIMINARIES TO ANALYSIS
+http://lipidlibrary.aocs.org/GC_lipid/02_prelim/index2.htm
+
+%%
+http://www.lipidmaps.org/data/classification/LM_classification_exp.php
+ as
+Fatty Acyls [FA]
+Glycerolipids [GL]
+Glycerophospholipids [GP]
+Sphingolipids [SP]
+Sterol Lipids [ST]
+Prenol Lipids [PR]
+Saccharolipids [SL]
+Polyketides [PK]
+
+%%
+FATTY ACIDS AND LIPIDS: STRUCTURES, EXTRACTION AND FRACTIONATION INTO CLASSES
+http://lipidlibrary.aocs.org/GC_lipid/02_prelim/index1.htm
+
+%%
+A HISTORICAL PERSPECTIVE ON GAS CHROMATOGRAPHY AND LIPIDS
+http://lipidlibrary.aocs.org/GC_lipid/01_intro/index.htm
+
+%%
+fix the wikipedia article [blood lipids]. maybe i should drop that and write a [plasma lipids] anew. for ref, here it is a [Lipid Compositions of Animal Tissues] [1] including a table with column PLASMA.
+ [1][http://lipidlibrary.aocs.org/Lipids/comp_animal/index.htm]
+
+%%
+/home/bunmei/plain/malpointers.txt
+
+﻿耿红蕊 provides me with random quotations , let me see throuth this and sort something out .
+
+%%
+interesting
+quote:
+  Extraction of grasshoppers abdominal secretion was done with Bligh and Dyer method。20 mg of biomaterial，Derivatization process was divided into two steps. Oximation was carried out for 16 h at room temperature with the use of 20L of methoxyamine hydrochloride in pyridine solution (15 mg/mL). Then, silylation (60 min at 97 ◦C in a thermoblock) was performed by addition of 20 L of BSTFA/TMCS mixture (99/1, v/v). The cooled down, derivatized mixture was diluted by admixing of 100 L of hexane to each sample and vortex-mixing for 2 min。
+  注意事项：（1）the derivatization procedure was improved by a two step derivatization process。Oximation and silylation reactions resulted in obtaining more stable derivatives of metabolic components。
+orig:
+  GC/MS technique and AMDIS software application in identification of hydrophobic compounds of grasshoppers’ abdominal secretio
+
+%%
+人乳腺癌细胞 ＭＣＦ－７，一皿对数生长期的细胞（约600万），取脂质提取液的一半，室温下真空干燥， 用氮气对样品进行再 次干燥后，加入8０μＬ甲氧 胺 （１５ ｍｇ／ｍＬ， 溶 剂 为 吡 啶 ）， 混 合１ｍｉｎ，于３０℃ 下反应９０ ｍｉｎ 后， 加入８０ μＬ ＢＳＴＦＡ 和４０μＬ 正己烷， 于７０℃下反应９０ｍｉｎ 
+出处：细胞代谢组学用于羽扇豆醇干预人乳腺癌细胞 ＭＣＦ－７ 的机理探究
+
+%%
+Taxus cuspidata cells（红豆杉） ， 30 mg cell powder，5/3的提取液，The dried residue was redissolved and derivatized for 90 min at 30 C in 50ul of 20 mg/mL methoxyamine hydrochloride in pyridine followed by a 30 min treatment at 37 C with 80 ul MSTFA for GC-MS analysis。
+226904-5G
+
+%%
+/home/bunmei/plain/critics/lipids.txt
+
+%%
+
+doi:10.1021/ac403181c
+http://pubs.acs.org/doi/full/10.1021/ac403181c
+
+Lipids are essential cellular components that comprise a large number of chemically distinct molecular species.(1) The LIPID Metabolites and Pathways Strategy (LIPID MAPS) consortium (www.lipidmaps.org) has systematically defined and classified lipids into eight categories, according to their structural and biosynthetic complexity: fatty acyls, glycerolipids, glycerophospholipids, sphingolipids, sterol lipids, prenol lipids, saccharolipids, and polyketides, each with its own classification hierarchy.(2) Lipids play an outstanding role in diverse biological functions, including structural, energetic, and regulatory functions,(2) and have been shown to be directly involved in many human diseases, such as atherosclerosis, Alzheimer¡¯s disease, and cancer.(3-6) Therefore, the identification and quantification of lipids in biological samples could be of great interest to obtain in-depth knowledge of lipids function in biological systems and their involvement in the development of diseases. It is in this context that lipidomics appears as an emerging field that aims to analyze lipid species in biological systems. Lipidomics provides insights into the specific roles of lipid molecular species and also assists in identifying potential biomarkers.(5) 
+%%
+/home/bunmei/plain/pubmed_terms.txt
+
+﻿"Chromatography, Gas/methods"[MeSH Terms] "Lipids"[MeSH Terms]
+
+("Metabolome"[MeSH Terms] OR "Metabolomics"[MeSH Terms])
+
+("Plasma"[MeSH Terms] OR "Serum"[MeSH Terms])
+
+"total lipid"
+
+https://www.ncbi.nlm.nih.gov/pubmed/?term=Bligh, E.G., and Dyer, W.J. (1959) A Rapid Method of Total Lipid Extraction and Puriﬁcation, Can. J. Biochem. Physiol. 37,911–917.
+%%
+/home/bunmei/plain/hands_dirty.txt
+
+50 ¦ÌL sample , 50¦ÌL saline , 90 ¦ÌL chloroform , 180 ¦ÌL methanol .[1]
+[1]doi:10.1016/j.jchromb.2013.10.029
+%%
+/home/bunmei/plain/collection_of_minor_interest.txt
+
+﻿%%
+minor interest
+sample: bovine kidney knob fat
+extraction: no detail
+derivatization: _very_detailed_ FAME
+isolation: gc
+coverage: fatty acids
+PMID: 6621256
+http://download.springer.com/static/pdf/103/art%253A10.1007%252FBF02535785.pdf?auth66=1417700551_52385a5e69d4dd1c9f99a42a81a47d7f&ext=.pdf
+
+%%
+minor interest
+PMID: 6889454 http://www.nrcresearchpress.com/doi/pdfplus/10.1139/o82-079
+coverage: fatty acids
+
+%%
+minor interest
+coverage: fatty acids
+doi:10.1016/j.bbalip.2011.07.006
+extraction: 10 μl of plasma is brought to a volume of 200 μl with PBS， ice-cold methanol (500 μl) and dichloromethane (250 μl) are added to 200 μl cell suspension (0.1 × 106 cells) and vortexed for 2 min. To minimize oxidation, 50 μg of butylated hydroxytoluene is added. A bi-phasic solution is formed by addition of 250 μl of dichloromethane and 250 μl of water. The phases are separated by centrifugation at 3000 rpm for 3 min and the lower organic layer is collected. The extraction is repeated once, 100 μl of internal standards are added and the combined lipid extracts are taken to dryness under argon.
+
+
+%%
+moderate interest
+Direct gas chromatographic examination of total lipid extracts
+www.jlr.org/content/8/4/352.full.pdf
+作者：A Kuksis - ‎1967
+
+%%
+minor interest
+Free Fatty Acids and Triglycerides
+ total esterified lipid to be broken down by FAMEs contributed by FFA compared to FAMEs from both FFA and TAGs
+doi: 10.1093/chromsci/bms093
+http://chromsci.oxfordjournals.org/content/50/10/934.long
+
+%%
+minor interest
+sample: bovine kidney knob fat
+extraction: no detail
+derivatization: _very_detailed_ FAME
+isolation: gc
+coverage: fatty acids
+PMID: 6621256
+http://download.springer.com/static/pdf/103/art%253A10.1007%252FBF02535785.pdf?auth66=1417700551_52385a5e69d4dd1c9f99a42a81a47d7f&ext=.pdf
+
+
+%%
+minor interest
+http://www.jbc.org/content/226/1/497.citation
+A SIMPLE METHOD FOR THE ISOLATION AND PURIFICATION OF TOTAL LIPIDES FROM ANIMAL TISSUES
+ 1957
+
+%%
+minor interest
+fatty acids
+
+extraction
+  10 μl of plasma is brought to a volume of 200 μl with PBS， ice-cold methanol (500 μl) and dichloromethane (250 μl) are added to 200 μl cell suspension (0.1 × 106 cells) and vortexed for 2 min. To minimize oxidation, 50 μg of butylated hydroxytoluene is added. A bi-phasic solution is formed by addition of 250 μl of dichloromethane and 250 μl of water. The phases are separated by centrifugation at 3000 rpm for 3 min and the lower organic layer is collected. The extraction is repeated once, 100 μl of internal standards are added and the combined lipid extracts are taken to dryness under argon.
+
+doi:10.1016/j.bbalip.2011.07.006
+
+%%
+minor interest
+PMID: 6889454 http://www.nrcresearchpress.com/doi/pdfplus/10.1139/o82-079
+coverage: fatty acids
+
+%%
+minor interest
+http://www.jlr.org/content/early/2009/09/25/jlr.D001503
+An extremely simple method for extraction of lysophospholipids and phospholipids from blood samples
+
+%%
+minor interest
+http://www.jlr.org/content/early/2009/09/25/jlr.D001503
+An extremely simple method for extraction of lysophospholipids and phospholipids from blood samples
+
+%%
+moderate interest
+extraction
+  for total lipid , modified Bligh and Dyer
+  for sphingolipids , Sullards et al.
+
+  Lipids were then extracted with two different methods. First, we used a widely used modified protocol of Bligh and Dyer (14)⇓ . Briefly, 400 μl of chloroform-methanol, 1:2 (v/v) was added to 20 mg of tissue homogenate and 5 μg of internal standards; 34:0-PA and 16:0-PI were added. After 10 min incubation on ice, 300 μl of chloroform and 200 μl of 1M hydrochloric acid (HCl) were added to the mixture and the lipids were isolated from the organic phase after centrifugation. The sample was vacuum dried (Thermo Savant SpeedVac), resuspended in 2 mL of chloroform-methanol, 1:1 (v/v), and used for analysis.
+
+  Sphingolipids were extracted as described by the method of Sullards et al. (15)⇓ . Briefly, 20 mg of tissue homogenate was sonicated in 500 μl of methanol and 250 μl of chloroform spiked with 2 μg of C19-CER and 2 μg of C12-SPM. The mixture was sonicated at room temperature and incubated overnight at 48°C. After cooling to room temperature, 75 μl of 1M methanolic KOH was added and the mixture was sonicated for 30 s, followed by incubation at 37°C for 2 h. The solution was neutralized with acetic acid, followed by the addition of 1 mL chloroform and 2 mL water. The extract was centrifuged at 4000 g for 10 min and the organic phase was recovered. The sample was vacuum dried and used for sphingolipid analysis.
+
+doi:10.1096/fj.05-5362com
+http://www.fasebj.org/content/20/8/1152.full
+
+%%
+minor interest
+ Determination of Free Fatty Acids and Triglycerides by Gas Chromatography Using Selective Esterification Reactions
+http://chromsci.oxfordjournals.org/content/50/10/934.long
+
+
+
+
+%%
+moderate interest
+http://www.jlr.org/content/49/5/1137.full
+lipid extraction by methyl-tert-butyl ether for high-throughput lipidomics
+COMMENT: review later
+%%
+/home/bunmei/plain/lit_survey.txt
+
+﻿this list contains papers i reach throuth search engines . literature referred by other authors will goto _references_ .
+
+
+%%
+Serum or plasma
+  The commonly recommended anticoagulant for plasma is disodium ethylenediaminetetraacetate (EDTA). Its use produces a shift of water from red blood cells to plasma, and therefore dilutes the plama and lowers the concentration of cholesterol. In the 1970s, its use was reported to lower the cholesterol concentration by 3% compared with measurements from serum, and in 1990 a difference of 4.7% was reported. The increase in the difference over the years was explained by a 50% increase in the EDTA concentrations in the commercially manufactured tubes (42, 43).
+  A practical reason for the use of plasma instead of serum is the fact that plasma, unlike serum, can be centrifuged immediately after taking the blood sample. The time delay is not a problem for cholesterol and triglycerides, but may effect glucose levels, since glucose is metabolized by red cells. Plasma is also required if a survey collects information on fibrinogen.
+
+http://www.thl.fi/publications/ehrm/product1/section5.htm
+URN:NBN:fi-fe20021442
+
+%%
+FEATURED
+  Methyl ester of nonadecanoic acid (C19:0) will be added as an internal standard. ... 1.5 g C19:0 ME; in 25 mL chloroform/methanol
+  transfer plasma aliquots into 2 ml cryotubes ...  Add 60 μL
+(1:40) of standard (C19:0 ME)
+  Vortex all the time, drop the plasma dropwise into the tube
+  according to Folch et al. (1957)
+  the amount of BHT also addressed .
+ISBN: 978-958-8709-35-2
+
+%%
+minor interest
+http://www.jbc.org/content/226/1/497.citation
+ A SIMPLE METHOD FOR THE ISOLATION AND PURIFICATION OF TOTAL LIPIDES FROM ANIMAL TISSUES
+ Folch et al. 1957
+
+%%
+moderate interest
+analytical bias
+  metabonomic human blood serum and plasma.
+  While differences between individuals were far greater than variation from any other experimental factor, each of the conditions examined did cause slight alterations to the NMR profile that could produce a systematic bias
+PMID: 16808437
+
+%%
+moderate interest
+methyl-tert-butyl ether
+ 2008
+http://www.jlr.org/content/49/5/1137.full
+
+%%
+FEATURED
+  For plasma samples, 100 μL of a plasma mixture containing standards was dried in a vacuum centrifuge, a model Bondiro MCFD 8508 freeze dryer with a concentrator from Ilshin Lab Co. (Yangju, Korea), for 6 h. To the dried powder, 300 μL of CH3OH and 600 μL of chloroform were added in sequence. After vortexing for 1 h, 180 μL of MS-grade water was added for phase separation followed by centrifugation at 5000 rpm for 5 min. Then, the lower organic layer was transferred to another centrifuge tube and dried in the vacuum centrifuge. The resulting dried lipids were reconstituted in 200 μL of 1:1 (v/v) CHCl3:CH3OH and diluted in 200 μL of CH3OH. The final solution was kept at 4 °C
+doi:10.1016/j.chroma.2014.01.024
+http://www.sciencedirect.com/science/article/pii/S0021967314000867
+
+%%
+FEATURED
+  but this is not a publication .
+  For the extraction of plasma lipids we used a very rapid and efficient method.
+To 0.2 ml plasma add 0.3 ml 0.5 M KH2PO4 , 1.5 ml chloroform and 0.5 ml methanol. After vortexing 2 minutes and centrifugation, the lower phase is collected with a Pasteur pipette through the protein disk and evaporated.
+
+http://www.cyberlipid.org/extract/extr0006.htm#6
+
+%%
+moderate interest
+uplc
+  25 μL of internal standard (PC(16:0/18:1)-d31 4 μg/mL in methanol for both acquisition modes) and 50 μL of 0.9% NaCl were added to a 50 μL aliquot of plasma sample, and the combined sample was extracted with 250 μL of ice-cold chloroform/methanol (1:2 v/v). After vortexing (1 min) and standing (1 h) at room temperature, the samples were centrifuged at 14,000 rpm for 10 min (4 °C). An aliquot of 120 μL supernatant was separated and dried under a gentle stream of nitrogen gas at 40 °C. The residue was then reconstituted with mixture of chloroform/methanol (1:1 v/v, 60 μL). The sample was vortexed (1 min) 
+  phosphatidylserine (PS), phosphatidylglycerol (PG), phosphatidylethanolamine (PE), phosphatidylcholine (PC), triacylglyceride (TG), phosphatidylinositol (PI), lysophosphatidylcholine (LysoPC), lysophosphatidic acid (LysoPA), and sphingomyelin (SM)
+   the plasma was prepared after a liquid–liquid extraction with a mixture of chloroform/methanol (1:2 v/v) including salting out by adding 0.15 M of NaCl and the residue after evaporation was reconstituted with a mixture of chloroform/methanol (1:1 v/v) to dissolve all lipids which have different polarity
+  salting out condition examined and 0.15M aka 0.9% is the best .
+  have table of identified species
+doi:10.1016/j.jchromb.2013.10.029
+http://www.sciencedirect.com/science/article/pii/S1570023213005679
+%%
