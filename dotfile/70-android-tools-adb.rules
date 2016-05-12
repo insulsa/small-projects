@@ -1,0 +1,8 @@
+#/etc/udev/rules.d/70-android-tools-adb.rules
+#
+#`udevadm trigger`
+#
+#       bq
+#               aquaris e4.5
+SUBSYSTEM="usb", ATTR{idVendor}=="2a47", ATTR{idProduct}=="0004", SYMLINK+="android_adb", ENV{adb_user}="yes", GROUP="plugdev"
+SUBSYSTEM="usb", ATTR{idVendor}=="2a47", ATTR{idProduct}=="0c02", SYMLINK+="android_adb", ENV{adb_user}="yes", GROUP="plugdev"

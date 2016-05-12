@@ -1,0 +1,14 @@
+#!/usr/bin/runhaskell
+
+import Network.CGI
+import Data.Maybe
+
+cgiMain :: CGI CGIResult
+
+
+cgiMain = do
+	  s <- getInput "q"
+	  output (fromMaybe "no" s)
+
+main :: IO ()
+main = runCGI (handleErrors cgiMain)
