@@ -1,0 +1,14 @@
+sysctl -w net.ipv4.ip_forward=1
+iptables -t nat -A POSTROUTING -j MASQUERADE
+ip addr add 10.0.0.1/24 dev wlan0
+ip link set wlan0 up
+iw dev wlan0 set type ibss
+iw dev wlan0 ibss join 1 2457
+busybox udhcpd -f /dev/stdin << EOF
+interface wlan0
+start 10.0.0.2
+end 10.0.0.10
+option subnet 255.255.255.0
+option router 10.0.0.1
+option dns 10.0.0.1
+EOF
